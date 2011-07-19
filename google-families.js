@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
 	})
 	//*/
 	function renderFontList(fonts) {
-		var template = "<div class='font' style='font-family:%name%,monospace'><h3><a href='%extlink%' target='_blank'>%name%</a></h3><ul>%variants%</ul></div>",
+		var template = "<div class='font' style='font-family:%name%'><h3><a href='%extlink%' target='_blank'>%name%</a></h3><ul>%variants%</ul></div>",
 			variantsTemplate = "<li style='%style%'>%variant%</li>",
 			variantsList = "",
 			specimenUrlPrefix = "http://www.google.com/webfonts/specimen/",
@@ -79,7 +79,6 @@ jQuery(document).ready(function($) {
 			tail = v.family + ':' + v.variants.join(',')
 			$('<link rel="stylesheet" href="'+base+tail+'" >').appendTo("head")
 		})
-		
 	}
 	
 });

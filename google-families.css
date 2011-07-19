@@ -3,9 +3,26 @@ html {
 	padding:0;
 }
 body {
+	background-color:#E9E9E3;
 	font:100%/1.5 sans-serif;
 	padding:0;
 	margin:0 2em;
+}
+header, footer {
+	background-color:#423e45;
+	color:#E9E9E3;
+	padding:1em 2em;
+	margin:0 -2em 2em;
+	text-shadow:-1px -1px 0 #000;
+	background-image:-moz-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
+	background-image:-ms-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
+	background-image:-webkit-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.1)), to(rgba(255,255,255,0)));
+	background-image:linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
+	
+}
+footer {
+	margin:2em -2em 0;
 }
 a {
 	text-decoration:none;
@@ -14,15 +31,18 @@ a {
 a:hover, a:focus {
 	text-decoration:underline;
 }
+header a, footer a {
+	color:hsl(0,40%,75%);
+}
 h1 {
 	font-size:2em;
-	margin:1em 0 0;
+	margin:0;
 }
 h2 {
 	font-size:1em;
 	font-weight:normal;
 	font-style:italic;
-	margin:0 0 1em;
+	margin:0;
 }
 h3 {
 	font-size:2em;
@@ -32,12 +52,12 @@ h3 {
 }
 h3 a {
 	display:block;
-	border-bottom:2px solid #ddd;
-	color:#444;
+	border-bottom:2px solid rgba(0,0,0,.333);
+	color:#222;
 }
 h3 a:focus, h3 a:hover {
 	text-decoration:none;
-	border-bottom-color:#666;
+	border-bottom-color:rgba(0,0,0,.667);
 }
 ul {
 	margin:0;
