@@ -4,6 +4,8 @@
 
 I quickly discovered that a good metric for higher-quality fonts was the *presence of at least one alternate*. The Google Web Fonts directory does not allow that type of filtering, so I built this simple one-off page that allows you to browse multi-variant typefaces.
 
+[View the fonts](http://somadesign.ca/demos/better-google-fonts/).
+
 These fonts are all downloaded. It should go without saying that the page will load slowly.
 
 [gwf]: http://www.google.com/webfonts
