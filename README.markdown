@@ -1,4 +1,4 @@
-# Better Google Web Fonts #
+# Better Google Fonts #
 
 [Google Web Fonts][gwf] is an awesome source of free, open source fonts hooked up to a world-class CDN. It's also, sadly, filled with one-off novelty fonts vying for the title of "the new Comic Sans."
 
