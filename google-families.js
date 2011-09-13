@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 	var target = $("#fonts"),
-		api = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBUK3PeqSEzwPNIyg94dBQpziFOPvm7-aA',
+		api = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBUK3PeqSEzwPNIyg94dBQpziFOPvm7-aA&sort=style',
 	gFontList = [],
 	onSuccess = function(data){
 		if ( data.kind === "webfonts#webfontList") {
