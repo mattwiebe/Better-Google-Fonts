@@ -17,9 +17,21 @@
 
 <div id="fonts"></div>
 
+<script id="font-template" type="text/template">
+		<h3><a href='<%= extlink %>' target='_blank'><%= family %></a></h3>
+		<ul><% _.each(variants, function(v){
+			var text = v.replace(/regular/i, '400').replace(/bold/i, '700'),
+				isItalic = /italic/.test(text),
+				weight = text.replace(/ ?italic/, ''),
+				style = (weight !== '') ? 'font-weight:'+weight+';' : '';
+			style = (isItalic) ? style + 'font-style:italic;' : style;
+			%><li style="<%= style %>"><%= text %></li><%
+		}); %></ul>
+
+</script>
+
 <footer>Another type-related service brought to you by <a href="http://somadesign.ca/">Soma Design</a>. <a href="http://somadesign.ca/2011/better-google-fonts/">Read the blog post</a> or <a href="https://github.com/mattwiebe/Better-Google-Fonts">fork the code</a>.</footer>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src='jquery-1.6.3.min.js'>\x3C/script>")</script>
-<script src="google-families.js"></script>
+<script src="jquery-1.8.3.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
