@@ -7,7 +7,7 @@
 	// Cached reference
 	var head = $("head");
 	// Minimum font variants to show a font
-	var minVariants = 2;
+	var minVariants = 4;
 	// Template for a single font
 	var template = _.template($("#font-template").html());
 	// Manually exclude these stupid fonts
@@ -31,9 +31,10 @@
 		template: template,
 		apiBase: 'http://fonts.googleapis.com/css?family=',
 		render: function() {
-			var fontData = this.model.getFontData();
+			var fontData = this.model.getFontData(),
+				family = '"' + fontData.family + '"';
 			this.getFont();
-			this.$el.html(this.template(fontData)).css({fontFamily: fontData.family});
+			this.$el.html(this.template(fontData)).css({fontFamily: family });
 		},
 		getFont: function() {
 			var fontData = this.model.toJSON(),
